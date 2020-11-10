@@ -42,7 +42,7 @@ class HomeController extends Controller
             $animals = Animal::all()->toArray();
             foreach ($animals as $animal) {
                 $animalList[$animal['id']] = $animal['name'];
-                $petList = Pet::where('id', '<=', $animal['id']);
+                $petList = Pet::where('id',  $animal['id']);
                 $petCountOutput .= '
                     <tr>
                         <td>'.$animal["name"].'</td>
