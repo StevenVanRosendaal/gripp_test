@@ -15,20 +15,27 @@ class AnimalSeeder extends Seeder
     public function run()
     {
         DB::table('animals')->insert([
-            'name' => 'hond'
-            ''
+            'name' => 'hond',
+            'created_at' => date("Y-m-d H:i:s"),
+            'updated_at' => date("Y-m-d H:i:s")
         ]);
 
         DB::table('animals')->insert([
-            'name' => 'kat'
+            'name' => 'kat',
+            'created_at' => date("Y-m-d H:i:s"),
+            'updated_at' => date("Y-m-d H:i:s")
         ]);
 
         DB::table('animals')->insert([
-            'name' => 'vis'
+            'name' => 'vis',
+            'created_at' => date("Y-m-d H:i:s"),
+            'updated_at' => date("Y-m-d H:i:s")
         ]);
 
         DB::table('animals')->insert([
-            'name' => 'konijn'
+            'name' => 'konijn',
+            'created_at' => date("Y-m-d H:i:s"),
+            'updated_at' => date("Y-m-d H:i:s")
         ]);
     }
 }
