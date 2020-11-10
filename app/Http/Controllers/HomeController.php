@@ -25,9 +25,10 @@ class HomeController extends Controller
         if ($request->ajax()) {
             $query = $request->get('query');
             $newPet = new Pet();
-            $newPet->name = $query['petName'];
-            $newPet->animal_type = ['petType'];
-            $newPet->address = ['petAddress'];
+            $newPet->name = $query[0];
+            $newPet->animal_type = $query[1];
+            $newPet->address = $query[2];
+
             $newPet->save();
         }
     }

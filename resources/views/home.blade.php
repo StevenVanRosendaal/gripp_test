@@ -116,9 +116,11 @@
             $.ajax({
                 url: put_pets_url,
                 method:'GET',
-                data:{query:query},
+                data:{query},
                 dataType:'json',
             })
+
+            location.reload();
         }
 
         window.onload = function () {
