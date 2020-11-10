@@ -15,3 +15,5 @@ use App\Http\Controllers\HomeController;
 */
 
 Route::get('/', [HomeController::class, 'index']);
+Route::get('/getPets', [HomeController::class, 'getPets'])->name('home.getPets');
+Route::get('/putPets', [HomeController::class, 'putPets'])->name('home.putPets');
