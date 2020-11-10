@@ -6,6 +6,8 @@ Execute the following command in your webroot folder
 
 Execute the following commands in the project root folder
 
+`composer install`
+
 `npm install`
 
 `npm run production`
